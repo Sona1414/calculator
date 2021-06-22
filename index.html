@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="script.js"></script>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 400px;
+            height: 230px;
+            margin-left: 450px;
+            background-color: black;
+        }
+        #first{
+            width: 264px;
+            height: 30px;
+            background-color: grey;
+        }
+        #two{
+            width: 55px;
+            height: 38px; 
+            background-color: red;
+            border: red;
+        }
+    </style>
+
+</head>
+<body>
+   <h1 style="text-align: center;">Calculator</h1>
+   <div>
+       <table>
+           <tr>
+               <td>
+                   <input type="text" id="first">
+               </td>
+               <td>
+                   <input type="button" id="ftwo" value="<" onclick="lastDelete()" style="width: 55px;height: 38px;background-color: blanchedalmond;">
+               </td>
+               <td>
+                   <input type="button" id="two" value="Clear" onclick="clearBOX()">
+               </td>
+           </tr>
+        </table>
+        <table>
+           <tr>
+               <td>
+                   <input type="button" value="1" onclick="displayValue('1')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+               </td>
+               <td>
+                <input type="button" value="2" onclick="displayValue('2')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+               </td>
+               <td>
+                <input type="button" value="3" onclick="displayValue('3')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+               </td>
+               <td>
+                <input type="button" value="+" onclick="displayValue('+')" style="border: grey;background-color: grey;width: 55px;height: 40px;">
+               </td>
+           </tr>
+           <tr>
+            <td>
+                <input type="button" value="4" onclick="displayValue('4')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="5"  onclick="displayValue('5')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="6" onclick="displayValue('6')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="-" onclick="displayValue('-')" style="border: grey;background-color: grey;width: 55px;height: 40px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="displayValue('7')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="8" onclick="displayValue('8')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="9" onclick="displayValue('9')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="*" onclick="displayValue('*')" style="border: grey;background-color: grey;width: 55px;height: 40px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="/" onclick="displayValue('/')"  style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="0" onclick="displayValue('0')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="." onclick="displayValue('.')" style="border: grey;background-color: grey;width: 108px;height: 40px;">
+            </td>
+            <td>
+             <input type="button" value="=" onclick="evaluateExpression()" style="border: grey;background-color: grey;width: 55px;height: 40px;">
+            </td>
+        </tr>
+       </table>
+
+   </div>
+</body>
+</html>
